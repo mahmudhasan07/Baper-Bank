@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BapEr Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-black">
+    <main>
+        <section class="mt-20 w-9/12 mx-auto">
+        <h1 class="text-5xl text-center">Welcome To the <span class="text-purple-700">BapEr Bank</span></h1>
+        <section id="input-showpart" class="flex flex-wrap my-10 gap-10">
+            <div id = 'deposit-show' class="flex-1 bg-cyan-600 p-5 rounded-xl">
+                <h1 class="text-2xl">Deposit</h1>
+                <h1 class="text-2xl">$ <span id="deposit-value">00</span></h1>
+
+            </div>
+            <div id="withdram-show" class="flex-1 bg-red-600 p-5 rounded-xl">
+                <h1 class="text-2xl" >Withdraw</h1>
+                <h1 class="text-2xl">$ <span id="withdraw-value">00</span></h1>
+            </div>
+            <div id="totalbalance-show" class="flex-1 bg-orange-600 p-5 rounded-xl">
+                <h1 class="text-2xl">Total Balance</h1>
+                <h1 class="text-2xl">$ <span id="total-show">1250</span></h1>
+                <p id="wrong"></p>
+            </div>
+        </section>
+        <section id="input-part" class="flex flex-wrap gap-10">
+            <div class="flex-1 bg-blue-600 p-3 rounded-xl">
+                <h1 class="text-2xl m-2">Deposit Amount</h1>
+                <input id="deposit-input" class="m-2 w-1/2 border-2 border-black p-1 rounded-xl" type="text" placeholder="$ Enter Your Deposit Amount"><br>
+                <button class="btn m-2 hover:bg-green-700 " id="btn-deposit">Deposit</button>
+            </div>
+            <div class="flex-1 bg-slate-600 p-3 rounded-xl">
+                <h1 class="text-2xl m-2">Withdraw Amount</h1>
+                <input id="withdraw-input" class="border-2 border-black m-2 w-1/2 p-1 rounded-xl" type="text" placeholder="$ Enter Your Withdraw Amount"><br>
+                <button class="btn m-2 hover:bg-green-700" id="btn-withdraw">Withdraw</button>
+            </div>
+
+        </section>
+    </section>
+    </main>
+    <!-- <script src="home1.js"></script> -->
+    <script src="home2.js"></script>
+</body>
+
+</html>

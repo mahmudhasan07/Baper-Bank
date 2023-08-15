@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header> 
+        <section class="bg-blue-600 my-20 py-20 w-1/2 mx-auto text-center text-white font-semibold  rounded-2xl">
+            <h1 class="text-5xl my-2">Please Log in Your Account</h1>
+            <div class="text-black">
+                <input id="email-input" class=" border-2 border-black my-5 p-3 w-1/2" type="email" placeholder="Enter Your Email Address"> <br>
+                <input id ='password-input' class="border-2 border-black my-2 p-3 w-1/2" type="password" placeholder="Enter Your Password"> <br>
+                <p id="wrong-password" class="text-red-900"></p>
+            </div>
+            <button id="btn" class="btn  bg-transparent hover:bg-black text-white mt-3 p-3">Log In</button>
+        </section>
+    </header>
+    <script src="login.js"></script>
+</body>
+</html>
